@@ -1,0 +1,11 @@
+C:\Users\kaan_\source\repos\schoolManagementSystem\bin\Debug\schoolManagementSystem.exe.config
+C:\Users\kaan_\source\repos\schoolManagementSystem\bin\Debug\schoolManagementSystem.exe
+C:\Users\kaan_\source\repos\schoolManagementSystem\bin\Debug\schoolManagementSystem.pdb
+C:\Users\kaan_\source\repos\schoolManagementSystem\obj\Debug\schoolManagementSystem.csproj.AssemblyReference.cache
+C:\Users\kaan_\source\repos\schoolManagementSystem\obj\Debug\schoolManagementSystem.Form1.resources
+C:\Users\kaan_\source\repos\schoolManagementSystem\obj\Debug\schoolManagementSystem.Properties.Resources.resources
+C:\Users\kaan_\source\repos\schoolManagementSystem\obj\Debug\schoolManagementSystem.csproj.GenerateResource.cache
+C:\Users\kaan_\source\repos\schoolManagementSystem\obj\Debug\schoolManagementSystem.csproj.CoreCompileInputs.cache
+C:\Users\kaan_\source\repos\schoolManagementSystem\obj\Debug\schoolManagementSystem.exe
+C:\Users\kaan_\source\repos\schoolManagementSystem\obj\Debug\schoolManagementSystem.pdb
+C:\Users\kaan_\source\repos\schoolManagementSystem\obj\Debug\schoolManagementSystem.AdminDashboardForm.resources
