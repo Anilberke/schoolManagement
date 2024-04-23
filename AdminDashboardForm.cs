@@ -9,8 +9,9 @@ namespace schoolManagementSystem
         {
             InitializeComponent();
             this.FormBorderStyle = FormBorderStyle.FixedSingle;
-        }
 
+        }
+        
         private void AdminDashboardForm_Load(object sender, EventArgs e)
         {
             Timer timer = new Timer();
@@ -33,6 +34,14 @@ namespace schoolManagementSystem
             // Update the label text with the current local time
             labelTime.Text = DateTime.Now.ToString("dd.MM.yyyy HH:mm");
         }
-        
+
+        private void studentSettingsButtonAdminDashboard_Click(object sender, EventArgs e)
+        {
+            StudentSettingsForm studentSettings = new StudentSettingsForm();
+            this.Hide();
+
+            studentSettings.ShowDialog();
+            this.Close();
+        }
     }
 }

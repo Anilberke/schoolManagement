@@ -13,7 +13,7 @@ namespace schoolManagementSystem
         {
             InitializeComponent();
             this.FormBorderStyle = FormBorderStyle.FixedSingle;
-            CreateAdminUser();
+          //  CreateAdminUser();
         }
 
         
@@ -29,14 +29,14 @@ namespace schoolManagementSystem
         }
 
         // Method to create admin user
-        private void CreateAdminUser()
+       /* private void CreateAdminUser()
         {
             using (SqlConnection connection = new SqlConnection(connectionString))
             {
                 try
                 {
                     connection.Open();
-                    SqlCommand cmd = new SqlCommand("SELECT COUNT(*) FROM Users WHERE Username = @Admin", connection);
+                    SqlCommand cmd = new SqlCommand("SELECT COUNT(*) FROM SystemUsers WHERE Username = @Admin", connection);
                     cmd.Parameters.AddWithValue("@Admin", "admin");
                     int count = (int)cmd.ExecuteScalar();
 
@@ -59,7 +59,7 @@ namespace schoolManagementSystem
                     MessageBox.Show("Error: " + ex.Message);
                 }
             }
-        }
+        }*/
     
         
         private void Timer_Tick(object sender, EventArgs e)
@@ -87,10 +87,10 @@ namespace schoolManagementSystem
                     try
                     {
                         connection.Open();
-                
-                        // Check if the entered credentials match the admin credentials
-                        SqlCommand cmd = new SqlCommand("SELECT COUNT(*) FROM Users WHERE Username = @Username AND Password = @Password", connection);
-                        cmd.Parameters.AddWithValue("@Username", usernameBox.Text); // Use parameter for username
+
+                        // Check if the entered credentials match any of the admin credentials in the SystemUsers table
+                        SqlCommand cmd = new SqlCommand("SELECT COUNT(*) FROM SystemUsers WHERE username = @Username AND password = @Password", connection);
+                        cmd.Parameters.AddWithValue("@Username", usernameBox.Text); 
                         cmd.Parameters.AddWithValue("@Password", passwordBox.Text);
                         int count = (int)cmd.ExecuteScalar();
 
